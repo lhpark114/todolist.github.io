@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <form class="hidden" id="login-bigform">
+      <div id="login-form">
+        <input type="text" style="width: 190px;" placeholder= "Enter your name"></input>
+        <a href="#" class="myButton">Enter</a>
+      </div>
+      
+    </form>
+    <h2 class="hidden" id="greeting"></h2>
+
+    <form id="todo-form">
+      <input type="text" style="width: 400px; " placeholder="Let's make something GREAT! - Enter" required />
+    </form>
+  
+    <ul id="todo-list">   
+    </ul>
+
+
+
+    <h5 id="clock">00:00:00</h5>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="src/login.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/todolist.js"></script>
+  </body>
+</html>
+
+<!-- 실시간 시계
+로컬 스토리지를 사용한 로그인
+로컬 스토리지를 사용한 투두리스트
+랜덤 배경 이미지
+날씨와 위치 (geolocation) -->
